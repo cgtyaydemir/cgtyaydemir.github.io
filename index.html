@@ -1,12 +1,352 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Buraya sayfanýn adýný yazabiliriz</title>
 </head>
-<body>
+<body bgcolor="black" text="white">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+
+
+<pre>
+Web Programlamada ne yazýlýrsa yazýlsýn etiketlerin içinde olmalýdýr.
+-<'html>
+-<'head>
+-<'/head>
+-<'body>
+-<'/body>
+-<'/html>
+
+Kalýbý bizim temel kalýbýmýzdýr.
+
+</pre>
+
+
+
+<pre>
+DOCTYPE kullanýmý
+DOCTYPE kullanýmý, tarayýcýlarýn bir web adresini doðru þekilde göstermesini saðlamaktadýr. Web üzerinde farklý belge tipleri bulunmaktadýr:
+HTML5
+<'!DOCTYPE html>
+HTML 4.01
+<'!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+XHTML 1.0
+<'!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+HTML etiketi
+HTML etiketi  tarayýcýda, belgenin  HTML kodu ile hazýrlanmýþ bilgi içerdiðini bildirir. Dosya adýndaki .html uzantýsý ise bu dosyanýn bir HTML belgesi olduðunu belirtir.
+
+Head etiketi
+Bir HTML belgesinin ilk kýsmýný belirler. Ýçinde TITLE elemanýnýn bulunmasý zorunludur. Belgenin baþlýðýný TITLE elemaný belirler.
+
+<'html>
+  <'head>
+     <'title>Buraya sayfanýn adýný yazabiliriz</title>
+  <'/head> 
+<'/html>
+
+
+
+TITLE etiketi
+
+TITLE etiketi oluþturduðunuz web sayfasýnýn baþlýk adýný belirleyebilirsiniz. Bu baþlýk, Þu an içinde bulunduðunuz dosyada gözükecektir.
+
+
+META etiketi
+Meta etiketiyle sayfanýzýn bir tanýmýný yapabilir ve sayfa içeriðini uygun anahtar sözcüklerle tanýmlayabilirsiniz.
+
+Keywords: Sitenizin içeriðini oluþturan kelimelerin bulunduðu etikettir.
+
+<'html>
+ <'head>
+  <'title>BÝLGÝSAYAR DÝLLERÝ</title>
+  <'meta name="keywords" CONTENT="bilgisayar dilleri, programlama dilleri, yazýlým">
+ <'/head>
+<'/html>
+Description: Bu etiket site hakkýnda bilgi veren temel etiketlerden biridir.
+
+<'html>
+ <'head>
+  <'title>BÝLGÝSAYAR DÝLLERÝ</title>
+  <'meta name="description" content="Sitenizin içeriði hakkýnda geniþ bilgi">
+ <'/head>
+<'/html>
+Author: Site yapýmcýsýnýn adý, iletiþim bilgilerinin bulunduðu etikettir.
+
+<'html>
+ <'head>
+  <'title>BÝLGÝSAYAR DÝLLERÝ</title>
+  <'meta name="Author" content="Adýnýz, E-Posta Adresiniz">
+ <'/head>
+<'/html>
+
+
+</pre>
+
+
+
+
+
+
+<h1>Boyutlandýrýlmýþ Baþlýk1</h1>
+<h2>Boyutlandýrýlmýþ Baþlýk2</h2>
+<h3>Boyutlandýrýlmýþ Baþlýk3</h3>
+<h4>Boyutlandýrýlmýþ Baþlýk4</h4>
+<h5>Boyutlandýrýlmýþ Baþlýk5</h5>
+<h6>Boyutlandýrýlmýþ Baþlýk6</h6>
+<pre>
+
+
+Yukarýda boyut örneklerini gördüðümüz headerlar hN etiketi ile tanýmlanýr
+N deðeri 1-6 arasý deðer alýr ve sayý deðeri ne kadar küçükse yazý tipi o kadar büyük olur
+
+
+
+
+
+
+
+
+Paragraflar (Paragraphs)
+Oluþturacaðýnýz Web sayfasý üzerine yerleþtireceðiniz metni ayrý paragraflar þeklinde ifade etmek için <p>  ve </p> etiketlerini kullanmalýsýnýz.
+Aþaðýda örnekleri mevcuttur.
+</pre>
+    <P>Bu metnin ilk paragrafýdýr.</p>
+    <p>Bu da ikinci paragraftýr.</p>
+
+
+
+<pre>
+
+HTML, çeþitli türlerde listelerin oluþturulabilmesine olanak saðlar. Bu liste türleri,
+
+Numaralanmamýþ liste
+Numaralanmýþ liste
+Taným listesi
+þeklindedir.
+
+
+Numaralanmamýþ listeyi oluþturmak için <'ul> ve <'/ul> etiketleri kullanýlýr. Bu etiketler arasýna liste elemanlarýný yerleþtirmek için <'li> etiketi kullanýlýr. Bu etiketi izleyen yere liste elemaný yerleþtirilmelidir. <'li> etiketinin <'/li> etiketiyle kapatýlmasý zorunlu deðildir.
+</pre>
+ <h3>Programlama Dilleri</h3>
+        <ul>
+         <li>Fortran</li>
+         <li>Cobol</li>
+         <li>Basic</li>
+         <li>Pascal</li>
+         <li>C/C++</li>
+        </ul>
+
+ <h3>Programlama Dilleri Numaralý</h3>
+        <ul>
+         <li>C#</li>
+         <li>Phyton</li>
+         <li>Visual Basic</li>
+         <li>Php</li>
+         <li>C/C++</li>
+        </ul>
+
+
+<pre>
+
+Numaralanmýþ Listeler
+Numaralanmýþ liste (numbered list ya da diðer adý ile ordered list (sýralanmýþ liste)) gerçekte numaralanmamýþ liste ile benzer yapýdadýr. Tek fark, bu tip bir listede <'ol> etiket 'ýnýn kullanýlmasýdýr. Diðer bir fark ise çýktýda görülür. Liste elemanlarýna otomatik olarak bir numara verilmektedir..</pre>
+
+
+    <h3>Programlama Dilleri</h3>
+       <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+       </ol>
+
+
+
+
+
+<h3>Ticaret Üni Bölümler </h3>
+       <ul>
+          <li>Mühendislik</li>
+              <ul>
+                 <li>Bilgisayar</li>
+                 <li>Endüstri</li>
+                 <li>Mekatronik</li>
+              </ul>
+          <li>Ýletiþim</li>
+              <ul>
+                <li>Reklamcýlýk</li>
+                <li>Halkla Ýliþkiler</li>
+        </ul>
+    </ul>
+
+
+
+
+
+<pre>
+
+Ýç Ýçe Listeler
+Listeleri iç içe de kullanabilirsiniz. Hatta, tek bir liste kalemi içinde iç içe listeler içeren paragraflar da düzenleyebilirsiniz.
+
+Örneðin, aþaðýdaki HTML kodunda dýþtaki liste elemanlarý þehirlerdir. Her þehre ait ilçeler ise liste elemaný içinde yeni bir liste düzenlenerek belirtilmiþtir.</pre>
+
+
+
+
+
+
+
+
+<h3>Ticaret Üni Bölümler </h3>
+       <ul>
+          <li>Mühendislik</li>
+              <ul>
+                 <li>Bilgisayar</li>
+                 <li>Endüstri</li>
+                 <li>Mekatronik</li>
+              </ul>
+          <li>Ýletiþim</li>
+              <ul>
+                <li>Reklamcýlýk</li>
+                <li>Halkla Ýliþkiler</li>
+        </ul>
+    </ul>
+
+
+<pre> 
+<'pre> etiketi
+Sabit geniþlikli bir yazýtipi içinde bir metin oluþturmak istediðiniz takdirde, HTML'in <'pre> <'/pre> etiketini kullanabilirsiniz. pre terimi, Ýngilizce preformatted (önceden biçimlendirilmiþ) sözcüðünden alýnmýþtýr. Bu etiket ayrýca metin içindeki boþluklarý, satýr baþlarýný ve tab'larý da anlamlý hale getirir.
+
+<'pre> etiketi, width özelliðiyle birlikte kullanýlarak bir satýr içinde yer alabilecek en fazla karakter sayýsý da belirlenebilir. <'pre> <'/pre> etiketleri arasýnda hiperlinkler (hyperlink) kullanýlabilir. Bununla birlikte, <'pre><'/pre> etiketleri arasýnda, diðer etiketlerin kullanýlmasýndan kaçýnmak gerekir.
+
+Aþaðýdaki örnekte görünüm gösterilmiþtir.
+
+
+
+</pre> 
+
+
+    <h3>Aldýðým Dersler</h3>
+<pre>
+Ders ADI       BEKLENEN NOT
+Web Programlama   BB
+Mantýksal Tasarým CC
+Elektronik Lab.   BB
+Analiz I          CD
+<a href="X.htm">DAHA FAZLA BÝLGÝ ÝÇÝN</a>
+</pre>
+
+
+<pre> 
+<'br> etiketI
+<'br> etiketi, bulunduðu konumdan itibaren bir satýrý sona erdirerek yeni bir satýrýn baþýna geçilmesini saðlar.
+<hr>
+<'hr> etiketi
+<'hr> etiketi, tarayýcý penceresinde yatay bir çizgi üretir. Bu çizginin uzunluðu kod içinde belirtilebilir.
+<hr>
+<'em>  etiketi
+Bir metnin istenilen kýsmýný belirgin hale getirmek için kullanýlýr.<'em> ve <'/em> etiketleri arasýndaki kýsým tipik olarak italik biçimde görüntülenir.
+<hr>
+<'s> ve <'strike> etiketleri
+Uygulandýklarý metnin üzerine bir çizgi çizilmesini saðlarlar.
+<hr>
+<'strong> etiketi
+Ýþaret edilen metni özellikle vurgulamak için kullanýlýr. Bu vurgulama bold (koyu) yazý karakteriyle gerçekleþtirilir.
+<hr>
+<'u> etiketi
+Ýþaretlediði metnin altýna bir alt çizgi çekilmesini saðlar.
+<hr>
+<'b> etiketi
+<'b> ve <'/b> etiketleri arasýna alýnan metin, koyu (bold) hale getirilir.
+<hr>
+
+<'i> etiketi
+<'i> ve <'/i> etiketleri arasýna alýnan metin, italik (eðik yazý biçimi) hale getirilir.
+<hr>
+
+Aþaðýdaki örnek kod incelenerek <'br> , <'hr>,<'em>  ,<'s> , <'strong>,<'u> ,<'b> ve  <'i>     etiketlerinin kullanýmý görülebilir:
+
+
+
+<'/pre> 
+<'html>
+  <'head>
+  <'meta charset="UTF-8">
+  <'title>ÜLKELER VE NÜFUSLARI<'/title><'hr>
+    <'/head>
+  <'body>   
+    <'h3>ÜLKELER VE NÜFUSLARI<'/h3>
+   <'p><strong>Avusturya</strong> 8 milyon nüfuslu <'s>bir<'/s> <'em>Orta Avrupa<'/em> <'br>ülkesidir.
+   <'b> Almanca<'/b> <'i>  resmi <'/i>  dilidir. Doðasý itibariyle <'br>dünyanýn en güzel 
+ülkelerinden <'u> biridir.<'/u> </p>
+    <'/body>
+<'/html>
+
+
+</pre> 
+ <h3>ÜLKELER VE NÜFUSLARI</h3><hr>
+   <p><strong>Avusturya</strong> 8 milyon nüfuslu <s>bir</s><em> Orta Avrupa</em> <br>ülkesidir.
+  <b>  Almanca</b>  <i> resmi</i>  dilidir. Doðasý itibariyle <br>dünyanýn en güzel 
+ülkelerinden <u> biridir.</u> </p>
+
+
+
+<pre>
+
+Bir link oluþturmak için aþaðýdaki adýmlar izlenmelidir:
+
+<'a sembolü ile baþlanýr.
+href="DosyaAdý" ifadesi yerleþtirilir. Burada DosyaAdý parametresi, oluþturulan link yardýmýyla çaðrýlacak olan dosyanýn adýdýr.
+> sembolünü yerleþtiriniz.
+Linki oluþturacak metni giriniz.
+<'/A> etiketiyle ifadeyi tamamlayýnýz.
+
+</pre>
+<a href="http://cagatayaydemir.com">LinkBirakmaOrnegi</a>
+
+
+
+<hr>
+</pre> 
+
+
+
+
+
+
+    Tablo Oluþturma öncelikle tablonuzun çevresinin kalýnlýðýný belirtmemiz ile baþlar.
+ardýndan 'caption' etiketi ile tablo baþlýðý tanýmlarýn.
+'tr''th' etiketi ile sütun adlarý
+'tr''td' etiketi ile satýr adlarý doldurulur.
+ 
+
+</pre>
+
+
+
+<table border="2">
+<caption> Tablo Örneði</caption>  
+<tr>  
+<th>Ad-Soyad</th>    
+<th>Cep</th>    
+</tr> 
+<tr>  
+<td>Çaðatay </td>
+<td>5399999999</td>    
+</tr> 
+<tr>  
+<td>Meryem</td>
+<td>5388888888</td>    
+</tr> 
+<tr>  
+<td>Ahmet</td>
+<td>5377777777</td>    
+</tr> 
+</table>
+
+
 
 </body>
 </html>
